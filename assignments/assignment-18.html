@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Assignment 18 - Student Admission</title>
+<style>body{font-family:Arial,sans-serif;line-height:1.5;margin:2rem}label{display:block;margin-top:.8rem}input,select,textarea{max-width:100%;padding:.45rem}table{border-collapse:collapse}th,td{border:1px solid #777;padding:.5rem}</style></head>
+<body><a href="#main">Skip to main content</a><header><h1>Student Admission Portal</h1><p>Welcome to our college admission page.</p></header>
+<nav aria-label="Main navigation"><a href="#courses">Courses</a> | <a href="#admission">Apply</a></nav>
+<main id="main"><section id="courses"><h2>Available Courses</h2><table><caption>Course Information</caption><thead><tr><th scope="col">Course</th><th scope="col">Duration</th><th scope="col">Seats</th></tr></thead><tbody><tr><td>B.Sc. Physical Science</td><td>3 years</td><td>60</td></tr><tr><td>BCA</td><td>3 years</td><td>60</td></tr><tr><td>B.Com</td><td>3 years</td><td>60</td></tr></tbody></table></section>
+<section id="admission"><h2>Admission Form</h2><form action="../submit.php" method="post">
+<label for="student">Full name</label><input id="student" name="student" required minlength="3">
+<label for="mail">Email</label><input id="mail" name="email" type="email" required>
+<label for="phone">Mobile number</label><input id="phone" name="mobile" type="tel" pattern="[0-9]{10}" title="Enter 10 digits" required>
+<label for="course">Select course</label><select id="course" name="course" required><option value="">Choose a course</option><option>B.Sc. Physical Science</option><option>BCA</option><option>B.Com</option></select>
+<label for="message">Why do you want to join?</label><textarea id="message" name="message" rows="4"></textarea>
+<label><input type="checkbox" required> I agree that the information is correct.</label><p><button type="submit">Apply Now</button> <button type="reset">Clear Form</button></p></form></section></main>
+<footer><p>&copy; 2026 Student Admission Portal</p></footer></body></html>
