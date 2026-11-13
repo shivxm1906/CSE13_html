@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Assignment 11 - Accessibility</title>
+<style>.skip-link{position:absolute;left:-9999px}.skip-link:focus{left:1rem;top:1rem;background:white;padding:1rem;z-index:10}</style></head>
+<body><a class="skip-link" href="#main">Skip to main content</a><header><h1>Accessible Web Page</h1></header>
+<nav aria-label="Main navigation"><a href="#main">Main content</a></nav><main id="main"><h2>Accessibility Features</h2>
+<img src="https://placehold.co/320x160?text=Campus" alt="Illustration representing a college campus">
+<p>This page uses a language attribute, descriptive title, alternative text, a skip link and labelled navigation.</p>
+<button type="button" aria-label="Show an accessibility message" onclick="document.getElementById('message').textContent='Thank you for exploring this accessible page.'">Show message</button><p id="message" aria-live="polite"></p></main></body></html>
